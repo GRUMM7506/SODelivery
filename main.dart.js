@@ -98120,7 +98120,7 @@ while(true)switch(s){case 0:n=A.dB("https://8aaa3e9f3479.ngrok-free.app/"+b,0,nu
 A.cC().$1("GET: "+n.k(0))
 p=t.N
 s=3
-return A.y(A.z6(n,A.ac(["Content-Type","application/json; charset=UTF-8"],p,p)),$async$cN)
+return A.y(A.z6(n,A.ac(["Content-Type","application/json; charset=UTF-8","ngrok-skip-browser-warning","true"],p,p)),$async$cN)
 case 3:o=d
 A.cC().$1("GET Response: "+o.b+" - "+A.fG(A.fE(o.e)).co(0,o.w))
 q=o
@@ -98136,7 +98136,7 @@ while(true)switch(s){case 0:n=A.dB("https://8aaa3e9f3479.ngrok-free.app/"+a,0,nu
 A.cC().$1("POST: "+n.k(0))
 A.cC().$1("POST Body: "+B.W.p0(b,null))
 p=t.N
-p=A.ac(["Content-Type","application/json; charset=UTF-8"],p,p)
+p=A.ac(["Content-Type","application/json; charset=UTF-8","ngrok-skip-browser-warning","true"],p,p)
 s=3
 return A.y(A.b5W(n,B.W.p0(b,null),p),$async$kn)
 case 3:o=d
@@ -98147,16 +98147,18 @@ break
 case 1:return A.D(q,r)}})
 return A.E($async$kn,r)},
 CT(a,b,c,d){return this.awN(a,b,c,d)},
-awN(a,b,c,d){var s=0,r=A.F(t.Wd),q,p
+awN(a,b,c,d){var s=0,r=A.F(t.Wd),q,p,o
 var $async$CT=A.A(function(e,f){if(e===1)return A.C(f,r)
-while(true)switch(s){case 0:p=A.dB("https://8aaa3e9f3479.ngrok-free.app/"+a,0,null)
-A.cC().$1("MULTIPART POST: "+p.k(0))
+while(true)switch(s){case 0:o=A.dB("https://8aaa3e9f3479.ngrok-free.app/"+a,0,null)
+A.cC().$1("MULTIPART POST: "+o.k(0))
 A.cC().$1("MULTIPART Fields: "+b.k(0))
 A.cC().$1("MULTIPART File: "+d)
-A.aYq("POST",p).x.a1(0,b)
-q=$.aT1().awp(d,null)
+q=A.aYq("POST",o)
+q.x.a1(0,b)
+q.r.m(0,"ngrok-skip-browser-warning","true")
+p=$.aT1().awp(d,null)
 s=2
-return A.y(A.aYp(c,d,q!=null?A.aGF(q):null),$async$CT)
+return A.y(A.aYp(c,d,p!=null?A.aGF(p):null),$async$CT)
 case 2:return A.D(null,r)}})
 return A.E($async$CT,r)}}
 A.uK.prototype={
