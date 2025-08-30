@@ -1,11 +1,11 @@
 {
-    "name": "sod",
-    "short_name": "sod",
+    "name": "SOD",
+    "short_name": "SOD",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#ff9500",
+    "theme_color": "#ffffff",
+    "description": "Service Of Delivery",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
